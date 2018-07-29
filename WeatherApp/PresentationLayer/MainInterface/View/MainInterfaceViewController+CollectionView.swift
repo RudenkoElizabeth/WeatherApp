@@ -40,11 +40,9 @@ extension MainInterfaceViewController {
                                               withReuseIdentifier: MainInterfaceConstants.header,
                                               for: indexPath) as! MainInterfaceCollectionReusableView
         reusableView.addButton.rx.tap.subscribe(onNext: { [weak self] _ in
-            self?.indexLastCell += 1
-            self?.sections.value[0].items.append((self?.indexLastCell)!)
+            self?.listener?.presentCreateNewWeatherCard()
         })
             .disposed(by: disposeBag)
-
         return reusableView
     }
 }

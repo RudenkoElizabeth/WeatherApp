@@ -28,7 +28,9 @@ final class MainInterfaceBuilder: Builder<MainInterfaceDependency>, MainInterfac
         let component = MainInterfaceComponent(dependency: dependency)
         let viewController = UIViewController.instantiateFromStoryboard(MainInterfaceConstants.storyboardId) as! MainInterfaceViewController
         let interactor = MainInterfaceInteractor(presenter: viewController)
+        let createNewWeatherCardBuilder = CreateNewWeatherCardBuilder(dependency: component)
         return MainInterfaceRouter(interactor: interactor,
-                                   viewController: viewController)
+                                   viewController: viewController,
+                                   createNewWeatherCardBuilder: createNewWeatherCardBuilder)
     }
 }

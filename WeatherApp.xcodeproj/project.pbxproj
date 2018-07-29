@@ -23,6 +23,14 @@
 		0E8B8747210DD9F20045BF2E /* MainInterfaceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B8746210DD9F20045BF2E /* MainInterfaceCollectionViewCell.swift */; };
 		0E8B8749210DDB120045BF2E /* MainInterfaceViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B8748210DDB120045BF2E /* MainInterfaceViewController+CollectionView.swift */; };
 		0E8B874D210E11090045BF2E /* MainInterfaceCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B874C210E11090045BF2E /* MainInterfaceCollectionReusableView.swift */; };
+		0E8B8754210E169A0045BF2E /* CreateNewWeatherCardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B874F210E169A0045BF2E /* CreateNewWeatherCardRouter.swift */; };
+		0E8B8755210E169A0045BF2E /* CreateNewWeatherCardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E8B8750210E169A0045BF2E /* CreateNewWeatherCardViewController.storyboard */; };
+		0E8B8756210E169A0045BF2E /* CreateNewWeatherCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B8751210E169A0045BF2E /* CreateNewWeatherCardViewController.swift */; };
+		0E8B8757210E169A0045BF2E /* CreateNewWeatherCardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B8752210E169A0045BF2E /* CreateNewWeatherCardBuilder.swift */; };
+		0E8B8758210E169A0045BF2E /* CreateNewWeatherCardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B8753210E169A0045BF2E /* CreateNewWeatherCardInteractor.swift */; };
+		0E8B8760210E17160045BF2E /* CreateNewWeatherCardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B875F210E17160045BF2E /* CreateNewWeatherCardConstants.swift */; };
+		0E8B8762210E17790045BF2E /* MainInterfaceComponent+CreateNewWeatherCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B8761210E17790045BF2E /* MainInterfaceComponent+CreateNewWeatherCard.swift */; };
+		0E8B8764210E24AF0045BF2E /* CrateNewWeatherCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B8763210E24AF0045BF2E /* CrateNewWeatherCardCell.swift */; };
 		8338CA17CD166DE0E7F597C5 /* Pods_WeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6835F16CDF853DD29F4B0D3 /* Pods_WeatherAppTests.framework */; };
 		CF88C9AFB0385CF593B2685E /* Pods_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94630F517A1E6F9979715A5E /* Pods_WeatherApp.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +67,14 @@
 		0E8B8746210DD9F20045BF2E /* MainInterfaceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceCollectionViewCell.swift; sourceTree = "<group>"; };
 		0E8B8748210DDB120045BF2E /* MainInterfaceViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainInterfaceViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		0E8B874C210E11090045BF2E /* MainInterfaceCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceCollectionReusableView.swift; sourceTree = "<group>"; };
+		0E8B874F210E169A0045BF2E /* CreateNewWeatherCardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewWeatherCardRouter.swift; sourceTree = "<group>"; };
+		0E8B8750210E169A0045BF2E /* CreateNewWeatherCardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateNewWeatherCardViewController.storyboard; sourceTree = "<group>"; };
+		0E8B8751210E169A0045BF2E /* CreateNewWeatherCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewWeatherCardViewController.swift; sourceTree = "<group>"; };
+		0E8B8752210E169A0045BF2E /* CreateNewWeatherCardBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewWeatherCardBuilder.swift; sourceTree = "<group>"; };
+		0E8B8753210E169A0045BF2E /* CreateNewWeatherCardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewWeatherCardInteractor.swift; sourceTree = "<group>"; };
+		0E8B875F210E17160045BF2E /* CreateNewWeatherCardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewWeatherCardConstants.swift; sourceTree = "<group>"; };
+		0E8B8761210E17790045BF2E /* MainInterfaceComponent+CreateNewWeatherCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainInterfaceComponent+CreateNewWeatherCard.swift"; sourceTree = "<group>"; };
+		0E8B8763210E24AF0045BF2E /* CrateNewWeatherCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrateNewWeatherCardCell.swift; sourceTree = "<group>"; };
 		4098F7AE4AFF6271A1B6D63C /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		94630F517A1E6F9979715A5E /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6835F16CDF853DD29F4B0D3 /* Pods_WeatherAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +175,7 @@
 		0E72C2B22104A14D00BDB46C /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				0E8B874E210E164A0045BF2E /* CreateNewWeatherCard */,
 				0E72C2B52104A19600BDB46C /* MainInterface */,
 			);
 			path = PresentationLayer;
@@ -237,6 +254,7 @@
 		0E72C2C52104A24900BDB46C /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
+				0E8B8761210E17790045BF2E /* MainInterfaceComponent+CreateNewWeatherCard.swift */,
 			);
 			path = Dependency;
 			sourceTree = "<group>";
@@ -246,6 +264,68 @@
 			children = (
 				0E8B8746210DD9F20045BF2E /* MainInterfaceCollectionViewCell.swift */,
 				0E8B874C210E11090045BF2E /* MainInterfaceCollectionReusableView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0E8B874E210E164A0045BF2E /* CreateNewWeatherCard */ = {
+			isa = PBXGroup;
+			children = (
+				0E8B8750210E169A0045BF2E /* CreateNewWeatherCardViewController.storyboard */,
+				0E8B875E210E16D80045BF2E /* Cell */,
+				0E8B875D210E16C40045BF2E /* View */,
+				0E8B875C210E16BD0045BF2E /* Router */,
+				0E8B875B210E16B50045BF2E /* Interactor */,
+				0E8B875A210E16AE0045BF2E /* Builder */,
+				0E8B8759210E16A30045BF2E /* Constants */,
+			);
+			path = CreateNewWeatherCard;
+			sourceTree = "<group>";
+		};
+		0E8B8759210E16A30045BF2E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0E8B875F210E17160045BF2E /* CreateNewWeatherCardConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0E8B875A210E16AE0045BF2E /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0E8B8752210E169A0045BF2E /* CreateNewWeatherCardBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		0E8B875B210E16B50045BF2E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0E8B8753210E169A0045BF2E /* CreateNewWeatherCardInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0E8B875C210E16BD0045BF2E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0E8B874F210E169A0045BF2E /* CreateNewWeatherCardRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0E8B875D210E16C40045BF2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E8B8751210E169A0045BF2E /* CreateNewWeatherCardViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E8B875E210E16D80045BF2E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0E8B8763210E24AF0045BF2E /* CrateNewWeatherCardCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -358,6 +438,7 @@
 				0E2552DD21033D53002967B6 /* LaunchScreen.storyboard in Resources */,
 				0E72C2BC2104A1B700BDB46C /* MainInterfaceViewController.storyboard in Resources */,
 				0E2552DA21033D53002967B6 /* Assets.xcassets in Resources */,
+				0E8B8755210E169A0045BF2E /* CreateNewWeatherCardViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,10 +548,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E72C2B12104A01B00BDB46C /* ClientConfig.swift in Sources */,
+				0E8B8754210E169A0045BF2E /* CreateNewWeatherCardRouter.swift in Sources */,
+				0E8B8762210E17790045BF2E /* MainInterfaceComponent+CreateNewWeatherCard.swift in Sources */,
+				0E8B8758210E169A0045BF2E /* CreateNewWeatherCardInteractor.swift in Sources */,
+				0E8B8756210E169A0045BF2E /* CreateNewWeatherCardViewController.swift in Sources */,
 				0E2552D321033D51002967B6 /* AppDelegate.swift in Sources */,
 				0E72C2BB2104A1B700BDB46C /* MainInterfaceRouter.swift in Sources */,
 				0E72C2BD2104A1B700BDB46C /* MainInterfaceViewController.swift in Sources */,
+				0E8B8760210E17160045BF2E /* CreateNewWeatherCardConstants.swift in Sources */,
+				0E8B8764210E24AF0045BF2E /* CrateNewWeatherCardCell.swift in Sources */,
 				0E72C2C92104A53A00BDB46C /* UIViewControllerHelper.swift in Sources */,
+				0E8B8757210E169A0045BF2E /* CreateNewWeatherCardBuilder.swift in Sources */,
 				0E72C2CB2104A79D00BDB46C /* AppComponent.swift in Sources */,
 				0E72C2C72104A3DD00BDB46C /* MainInterfaceConstants.swift in Sources */,
 				0E72C2BE2104A1B700BDB46C /* MainInterfaceBuilder.swift in Sources */,

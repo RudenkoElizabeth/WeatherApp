@@ -9,10 +9,14 @@
 import RIBs
 import RxSwift
 
-protocol MainInterfaceRouting: ViewableRouting { }
+protocol MainInterfaceRouting: ViewableRouting {
+    func presentCreateNewWeatherCard()
+    func dismissCreateNewWeatherCard()
+}
 
 protocol MainInterfacePresentable: Presentable {
     var listener: MainInterfacePresentableListener? { get set }
+    func addNewWeatherCard()
 }
 
 protocol MainInterfaceListener: class { }
@@ -33,5 +37,22 @@ final class MainInterfaceInteractor: PresentableInteractor<MainInterfacePresenta
 
     override func willResignActive() {
         super.willResignActive()
+    }
+
+    // MARK: - MainInterfacePresentableListener
+
+    func presentCreateNewWeatherCard() {
+        router?.presentCreateNewWeatherCard()
+    }
+
+    // MARK: - CreateNewWeatherCardListener
+
+    func createNewWeatherCard() {
+        router?.dismissCreateNewWeatherCard()
+        presenter.addNewWeatherCard()
+    }
+
+    func closeNewWeatherCard() {
+        router?.dismissCreateNewWeatherCard()
     }
 }

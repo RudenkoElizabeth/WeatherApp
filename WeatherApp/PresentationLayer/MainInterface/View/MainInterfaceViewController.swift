@@ -10,7 +10,9 @@ import RIBs
 import RxSwift
 import UIKit
 
-protocol MainInterfacePresentableListener: class { }
+protocol MainInterfacePresentableListener: class {
+    func presentCreateNewWeatherCard()
+}
 
 final class MainInterfaceViewController: UIViewController, MainInterfacePresentable, MainInterfaceViewControllable {
 
@@ -25,5 +27,22 @@ final class MainInterfaceViewController: UIViewController, MainInterfacePresenta
         super.viewDidLoad()
         setupDataSource()
         setupDelegate()
+    }
+
+    // MARK: - MainInterfaceViewControllable
+
+    func present(viewController: ViewControllable) {
+        present(viewController.uiviewController, animated: true, completion: nil)
+    }
+
+    func dismiss(viewController: ViewControllable) {
+        dismiss(animated: true, completion: nil)
+    }
+
+    // MARK: - MainInterfacePresentable
+
+    func addNewWeatherCard() {
+        indexLastCell += 1
+        sections.value[0].items.append(indexLastCell)
     }
 }
