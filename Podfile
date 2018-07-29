@@ -6,6 +6,7 @@ def common_pods
     pod 'MBProgressHUD'
     pod 'RIBs'
     pod 'RxCocoa'
+    pod 'RxDataSources'
 end
 
 def shared_pods

@@ -20,6 +20,9 @@
 		0E72C2C72104A3DD00BDB46C /* MainInterfaceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E72C2C62104A3DD00BDB46C /* MainInterfaceConstants.swift */; };
 		0E72C2C92104A53A00BDB46C /* UIViewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E72C2C82104A53A00BDB46C /* UIViewControllerHelper.swift */; };
 		0E72C2CB2104A79D00BDB46C /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E72C2CA2104A79D00BDB46C /* AppComponent.swift */; };
+		0E8B8747210DD9F20045BF2E /* MainInterfaceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B8746210DD9F20045BF2E /* MainInterfaceCollectionViewCell.swift */; };
+		0E8B8749210DDB120045BF2E /* MainInterfaceViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B8748210DDB120045BF2E /* MainInterfaceViewController+CollectionView.swift */; };
+		0E8B874D210E11090045BF2E /* MainInterfaceCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B874C210E11090045BF2E /* MainInterfaceCollectionReusableView.swift */; };
 		8338CA17CD166DE0E7F597C5 /* Pods_WeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6835F16CDF853DD29F4B0D3 /* Pods_WeatherAppTests.framework */; };
 		CF88C9AFB0385CF593B2685E /* Pods_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94630F517A1E6F9979715A5E /* Pods_WeatherApp.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +56,9 @@
 		0E72C2C62104A3DD00BDB46C /* MainInterfaceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceConstants.swift; sourceTree = "<group>"; };
 		0E72C2C82104A53A00BDB46C /* UIViewControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerHelper.swift; sourceTree = "<group>"; };
 		0E72C2CA2104A79D00BDB46C /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		0E8B8746210DD9F20045BF2E /* MainInterfaceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceCollectionViewCell.swift; sourceTree = "<group>"; };
+		0E8B8748210DDB120045BF2E /* MainInterfaceViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainInterfaceViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		0E8B874C210E11090045BF2E /* MainInterfaceCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceCollectionReusableView.swift; sourceTree = "<group>"; };
 		4098F7AE4AFF6271A1B6D63C /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		94630F517A1E6F9979715A5E /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6835F16CDF853DD29F4B0D3 /* Pods_WeatherAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +159,7 @@
 		0E72C2B22104A14D00BDB46C /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				0E72C2B52104A19600BDB46C /* MainInterface */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -160,7 +167,6 @@
 		0E72C2B32104A16600BDB46C /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
-				0E72C2B52104A19600BDB46C /* MainInterface */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
@@ -176,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				0E72C2B72104A1B700BDB46C /* MainInterfaceViewController.storyboard */,
+				0E8B8743210DD94B0045BF2E /* Cell */,
 				0E72C2C42104A23B00BDB46C /* View */,
 				0E72C2C32104A23200BDB46C /* Router */,
 				0E72C2C22104A22800BDB46C /* Interactor */,
@@ -222,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				0E72C2B82104A1B700BDB46C /* MainInterfaceViewController.swift */,
+				0E8B8748210DDB120045BF2E /* MainInterfaceViewController+CollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -231,6 +239,15 @@
 			children = (
 			);
 			path = Dependency;
+			sourceTree = "<group>";
+		};
+		0E8B8743210DD94B0045BF2E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0E8B8746210DD9F20045BF2E /* MainInterfaceCollectionViewCell.swift */,
+				0E8B874C210E11090045BF2E /* MainInterfaceCollectionReusableView.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		1AD354B6C7D7D0860E41E45F /* Pods */ = {
@@ -398,18 +415,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/RIBs/RIBs.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RIBs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -453,7 +474,10 @@
 				0E72C2CB2104A79D00BDB46C /* AppComponent.swift in Sources */,
 				0E72C2C72104A3DD00BDB46C /* MainInterfaceConstants.swift in Sources */,
 				0E72C2BE2104A1B700BDB46C /* MainInterfaceBuilder.swift in Sources */,
+				0E8B874D210E11090045BF2E /* MainInterfaceCollectionReusableView.swift in Sources */,
+				0E8B8749210DDB120045BF2E /* MainInterfaceViewController+CollectionView.swift in Sources */,
 				0E72C2BF2104A1B700BDB46C /* MainInterfaceInteractor.swift in Sources */,
+				0E8B8747210DD9F20045BF2E /* MainInterfaceCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
